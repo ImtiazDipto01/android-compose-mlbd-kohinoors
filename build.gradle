@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = "1.6.10"
+    ext {
+        ktxVersion = '1.7.0'
+        activityKtxVersion = '1.4.0'
+        fragmentKtxVersion = '1.4.1'
+        appCompatVersion = '1.4.1'
+        materialVersion = '1.6.0'
+        constraintLayoutVersion = '2.1.4'
+        viewPager2Version = '1.0.0'
+        navigationVersion = '2.4.2'
+        hiltVersion = '2.40.5'
+        hiltXVersion = '1.0.0'
+        hiltComposeVersion = '1.0.0'
+        lifecycleVersion = '2.4.1'
+        lifecycleExtVersion = '2.2.0'
+        roomVersion = '2.4.2'
+        gsonVersion = '2.8.9'
+        retrofitVersion = '2.9.0'
+        okhttpVersion = '4.9.1'
+        glideVersion = '4.12.0'
+        timberVersion = '5.0.1'
+        loggerVersion = '2.2.0'
+        shimmerVersion = '0.5.0'
+        wifiUtilVersion = "1.6.5"
+        espresso_core = "3.1.1"
+        espresso_idling_resource = "3.2.0"
+        mockkVersion = "1.9.2"
+        mockWebServer = "4.10.0"
+        junitVersion = "4.13.2"
+        junitJupiterVersion = "5.6.0"
+        test_runner = "1.2.0"
+        test_core = "1.2.0"
+        coroutines_play_services = "1.3.2"
+        markdown_processor = "0.1.3"
+        fragment_version = "1.2.0"
+        androidx_test_ext = "1.1.1"
+        fabric_version = "1.31.2"
+        compose_version = '1.1.1'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+plugins {
+    id 'com.android.application' version '7.2.0' apply false
+    id 'com.android.library' version '7.2.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
