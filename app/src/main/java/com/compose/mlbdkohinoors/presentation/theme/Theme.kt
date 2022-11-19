@@ -1,4 +1,4 @@
-package com.compose.mlbdkohinoors.presentation.main.ui.theme
+package com.compose.mlbdkohinoors.presentation.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

@@ -28,7 +28,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.compose.mlbdkohinoors.R
-import com.compose.mlbdkohinoors.presentation.main.ui.theme.MLBDKohinoorsTheme
+import com.compose.mlbdkohinoors.presentation.theme.MLBDKohinoorsTheme
 
 val list = listOf<String>("", "", "", "", "", "", "", "", "", "")
 
